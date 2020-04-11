@@ -1,0 +1,20 @@
+{
+    "name": "matheus/orm-with-doctrine",
+    "description": "This project was created with objective to learn and practice Doctrine",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matheus Oliveira da Silva",
+            "email": "matheus.oliveira.silv@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+	    "Alura\\Doctrine\\": "src/"
+	}
+    }
+}
