@@ -33,7 +33,7 @@ class Student
     public function setName($name): self
     {
         $this->name = $name;
-	return $name;
+	return $this;
     }
 }
 
