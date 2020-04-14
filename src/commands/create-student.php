@@ -4,7 +4,7 @@ use Alura\Doctrine\Helper\EntityManagerFactory;
 
 require_once  'vendor/autoload.php';
 $student = new Student();
-$student->setName("Matthew Oliver");
+$student->setName($argv[1]);
 
 $entityManagerFactory = new EntityManagerFactory();
 $entityManager = $entityManagerFactory->getEntityManager();
