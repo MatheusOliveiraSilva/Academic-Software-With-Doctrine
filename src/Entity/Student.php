@@ -74,7 +74,7 @@ class Student
 	    return $this;
 	}
 
-        $this->courses-add($course);
+        $this->courses->add($course);
 	$course->addStudent($this);
 	return $this;
     }
