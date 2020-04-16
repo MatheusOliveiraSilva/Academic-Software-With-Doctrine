@@ -1,8 +1,8 @@
 <?php
 
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 namespace Alura\Doctrine\Entity;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @Entity
@@ -41,7 +41,7 @@ class Course
         return $this->name;
     }
 
-    public function seName(string $name): self
+    public function setName(string $name): self
     {
         $this->name = $name;
 	return $this;
