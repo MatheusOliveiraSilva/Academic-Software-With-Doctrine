@@ -40,4 +40,9 @@ foreach ($students as $student) {
     echo "\n";
 }
 
-print_r($debugStack);
+
+echo "\n";
+
+foreach ($debugStack->queries as $queryInfo) {
+    echo $queryInfo['sql'] . "\n";
+ }

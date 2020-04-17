@@ -11,7 +11,9 @@ $entityManager = $entityManagerFactory->getEntityManager();
 
 $studentRepository = $entityManager->getRepository(Student::class);
 
-$studentList = $studentRepository->findAll();
+$dql = "SELECT student FROM Alura\\Doctrine\\Entity\\Student student WHERE  student.id=1 OR student.name = 'Nico'";
+$query = $entityManager->createQuery($dql);
+$studentList = $query->getResult();
 
 foreach ($studentList as $student) {
     $phones = $student
