@@ -36,7 +36,7 @@ class Student
     public function __construct()
     {
         $this->phones = new ArrayCollection();
-	$this->courses = new ArrayCollecion();
+	$this->courses = new ArrayCollection();
     }
 
     public function getId(): int
